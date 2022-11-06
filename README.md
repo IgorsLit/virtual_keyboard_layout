@@ -1,6 +1,8 @@
 # Virtual Keyboard Layout
 
-This repository contents is the virtual keyboard layout file and the buttons' images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keys keyboard (Main, Functional Keys and NumPad) layout with 4 languages symbols (img.#1).
+This repository contents is the virtual keyboard layout file and the buttons' images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keies keyboard (Main, Functional Keys and NumPad) layout with 4 languages symbols (see image #1).
+
+![img#1 85 keies keyboard](img/keyboard_85keys_small.png)
 
 
 ## Program
@@ -34,11 +36,13 @@ y-> "
 "
 ```
 
-###Lauch
+### Lauch
 
 1. Once you are on the desktop of your Raspberry Pi, click the icon in the top-left hand corner of the screen.
 2. Hover over “Accessories”, this will bring up an additional menu.
-3. Within this new menu, click “Keyboard” to launch the program (img.#2)
+3. Within this new menu, click “Keyboard” to launch the program (see image #2)
+
+![img#2 Launch Virtual Keyboard](img/keyboard_launch.png)
 
 ### Keyboard launcher
 
@@ -128,3 +132,6 @@ Input command in the Terminal:
 sudo reboot
 ```
 
+After reboot you will see the Toggle Virtual Keyboard icon near the Clock (see image #3).
+
+![img#3 Toggle Virtual Keyboard icon](img/keyboard_panel_icon.png) 
