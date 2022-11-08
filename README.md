@@ -91,13 +91,13 @@ X-MB-INPUT-MECHANISM=True
 
 4. Copy the panel file to user configuration. Input command in the Terminal:
 ```
-cp /etc/xdg/lxpanel/LXDE-pi/panels/panel /home/pi/.config/lxpanel/LXDE-pi/panels/panel
+cp /etc/xdg/lxpanel/LXDE-pi/panels/panel ~/.config/lxpanel/LXDE-pi/panels/panel
 ```
 
 Edit this file. Input command in the Terminal: 
 
 ```
-nano /home/pi/.config/lxpanel/LXDE-pi/panels/panel
+nano ~/.config/lxpanel/LXDE-pi/panels/panel
 ```
 
 Add text in the end of file. Type text in text editor nano:
@@ -126,7 +126,7 @@ Plugin {
 ```
 
 5. Reboot system.
-Input command in the Terminal: 
+Input command in the Terminal:
 
 ```
 sudo reboot
@@ -134,24 +134,40 @@ sudo reboot
 
 After reboot you will see the Toggle Virtual Keyboard icon near the Clock (see image #3).
 
-![img#3 Toggle Virtual Keyboard icon](img/keyboard_panel_icon.png) 
+![img#3 Toggle Virtual Keyboard icon](img/keyboard_panel_icon.png)
 
 ## Virtual Keyboard Layouts
 
+The default keyboard layout is only letter keys QWERTY, Backspace, Enter and Shift. To change layout you need other file in XML format. You can find some example layouts at /usr/share/matchbox-keyboard/ Copy configuration into user home folder .matchbox (~/.matchbox)
+
 ### Change Layout
 
-Info: https://stackoverflow.com/questions/70574505/how-to-change-the-default-matchbox-keyboard-layout
+Info: https://stackoverflow.com/questions/70574505/how-to-change-the-default-matchbox-keyboard-layout 
 
-https://forums.raspberrypi.com/viewtopic.php?t=325579
+1. Download the repository files into Downloads folder (~/Downloads/virtual_keyboard_layout)
 
-https://forum.openmarine.net/showthread.php?tid=4070
+2. Input command in the Terminal: 
 
-https://forums.raspberrypi.com/viewtopic.php?t=113526
+```
+mkdir ~/.matchbox
+cp ~/Downloads/virtual_keyboard_layout/keyboard_qwerty_85keys.xml ~/.matchbox/keyboard.xml
+```
+
+3. Copy arrows' images in /usr/share/machbox-keyboard . Input command in the Terminal: 
+
+```
+sudo cp ~/Downloads/virtual_keyboard_layout/img/arrow_*.png /usr/share/machbox-keyboard/
+```
+
+4. Launch virtual keyboard.
+
 
 ## Layot description
 
 85 keys keyboard layout with 4 languages symbols
 Main, Functional Keys and NumPad
+
+This layout is based on the topic desctibed https://forums.raspberrypi.com/viewtopic.php?t=325579
 
 Main
 Latvian language symbols (mod2):
