@@ -1,6 +1,6 @@
-# Virtual Keyboard Layout
+ity# Virtual Keyboard Layout
 
-This repository contents is the virtual keyboard layout file and the buttons' images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keys keyboard (Main, Functional Keys and NumPad) layout with 4 languages symbols (see image #1).
+This repository contents is the virtual keyboard layout file and the buttons' images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keys keyboard (Main, Function Keys and NumPad) layout with 4 languages symbols (see image #1).
 
 ![img#1 85 keys keyboard](img/keyboard_85keys_small.png)
 
@@ -94,7 +94,7 @@ X-MB-INPUT-MECHANISM=True
 cp /etc/xdg/lxpanel/LXDE-pi/panels/panel ~/.config/lxpanel/LXDE-pi/panels/panel
 ```
 
-Edit this file. Input command in the Terminal: 
+Edit this file. Input command in the Terminal:
 
 ```
 nano ~/.config/lxpanel/LXDE-pi/panels/panel
@@ -142,18 +142,18 @@ The default keyboard layout is only letter keys QWERTY, Backspace, Enter and Shi
 
 ### Change Layout
 
-Info: https://stackoverflow.com/questions/70574505/how-to-change-the-default-matchbox-keyboard-layout 
+Info: https://stackoverflow.com/questions/70574505/how-to-change-the-default-matchbox-keyboard-layout
 
 1. Download the repository files into Downloads folder (~/Downloads/virtual_keyboard_layout)
 
-2. Input command in the Terminal: 
+2. Input command in the Terminal:
 
 ```
 mkdir ~/.matchbox
 cp ~/Downloads/virtual_keyboard_layout/keyboard_qwerty_85keys.xml ~/.matchbox/keyboard.xml
 ```
 
-3. Copy arrows' images in /usr/share/machbox-keyboard . Input command in the Terminal: 
+3. Copy arrows' images in /usr/share/machbox-keyboard . Input command in the Terminal:
 
 ```
 sudo cp ~/Downloads/virtual_keyboard_layout/img/arrow_*.png /usr/share/machbox-keyboard/
@@ -165,41 +165,49 @@ sudo cp ~/Downloads/virtual_keyboard_layout/img/arrow_*.png /usr/share/machbox-k
 ## Layot description
 
 85 keys keyboard layout with 4 languages symbols
-Main, Functional Keys and NumPad
+Main, Function Keys and NumPad (see image #4)
 
-This layout is based on the topic desctibed https://forums.raspberrypi.com/viewtopic.php?t=325579
+This layout is based on the topic described keyboard layouts https://forums.raspberrypi.com/viewtopic.php?t=325579
 
-Main
-Latvian language symbols (mod2):
+### Main keys
 
-qwertyuiop
+![img#4 Keyboard's main keys](img/keyboard_01_main_keys.png)
 
-ŪūĒēČčŽžĶķ
+### Latvian language symbols (mod2):
 
-asdfghjkl
+The Latvian language's layout based on the base-fragment-lv_LV.xml layout file
+full path is /usr/share/matchbox-keyboard/base-fragment-lv_LV.xml
 
-ŠšĢģŅņĪī¸
+|   |   |   |   |   |   |   |   |   |   | Description |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| q | w | e | r | t | y | u | i | o | p |   |
+| Ū | ū | Ē | ē | Č | č | Ž | ž | Ķ | ķ |   |
+|   |   |   |   |   |   |   |   |   |   |   |
+| a | s | d | f | g | h | j | k | l |   |   |
+| Š | š | Ģ | ģ | Ņ | ņ | Ī | ī | ¸ |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |
+| z | x | c | v | b | n | m |   |   |   |   |
+| Ā | ā | Ļ | ļ | ˆ | ˋ | ˇ |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |
 
-zxcvbnm
+![img#5 Latvian language](img/keyboard_05_latvian_greek.png)
 
-ĀāĻļˆˋˇ
+### Russian language symbols (mod3):
 
-based on base-fragment-lv_LV.xml layout file
-full path /usr/share/matchbox-keyboard/base-fragment-lv_LV.xml
+The Russian language's layout based on the base-fragment-ru_RU.xml layout file
+full path is /usr/share/matchbox-keyboard/base-fragment-ru_RU.xml
 
-Russian language symbols (mod3):
-
-qwertyuiop{
-
-йцукенгшщзх
-
-asdfghjkl;'
-
-фывапролджэ
-
-zxcvbnm,.
-
-ячсмитьбю
+|   |   |   |   |   |   |   |   |   |   |   |   | Description |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| q | w | e | r | t | y | u | i | o | p | { | } |   |
+| й | ц | у | к | е | н | г | ш | щ | з | х |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+| a | s | d | f | g | h | j | k | l | ; | ' |   |   |
+| ф | ы | в | а | п | р | о | л | д | ж | э |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+| z | x | c | v | b | n | m | , | . |   |   |   |   |
+| я | ч | с | м | и | т | ь | б | ю |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 1234567890-
 
@@ -217,9 +225,9 @@ BkspHomePgUp789÷
 
 ЯЧС    М  ИТЬБЮ
 
-based on base-fragment-ru_RU.xml layout file
-full path /usr/share/matchbox-keyboard/base-fragment-ru_RU.xml
+![img#5 Russian language](img/keyboard_06_russian.png)
 
+### Greek language's alphabet fragment
 Greek language symbols fragment is in NumPad keyboard (mod2)
 
 NumPad:
@@ -239,7 +247,7 @@ https://wiki.debian.org/Locale
 
 1. sudo raspi-config
 2. select Localisation options
-3. select Locale 
+3. select Locale
 4. in Package configuration check your country language and english packages
 5. select your country as default
 6. change /etc/locale/default to:
@@ -248,6 +256,6 @@ LANGUAGE=en_US.UTF-8
 LC_ALL=lv_LV.UTF-8
 or if you want to choose other settings run command:
 locale
-and copy other options to /etc/locale/default 
+and copy other options to /etc/locale/default
 7. sudo locale-gen
 8. sudo reboot 
