@@ -162,7 +162,7 @@ sudo cp ~/Downloads/virtual_keyboard_layout/img/arrow_*.png /usr/share/machbox-k
 4. Launch virtual keyboard.
 
 
-## Layot description
+## Layout description
 
 85 keys keyboard layout with 4 languages symbols
 Main, Function Keys and NumPad (see image #4)
@@ -201,7 +201,7 @@ The Russian language layout based on the base-fragment-ru_RU.xml layout file. Fu
 |      |      |       |     |   |   |   |   |       |   |   |   | Description |
 |:----:|:----:|:-----:|:---:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-:|:-----------:|
 | q    | w    |  e    | r   | t | y | u | i |  o    | p | { | } |             |
-| й    | ц    |  у    | к   | е | н | г | ш |  щ    | з | х |   |             |
+| й    | ц    |  у    | к   | е | н | г | ш |  щ    | з | х | ъ |             |
 |      |      |       |     |   |   |   |   |       |   |   |   |             |
 | a    | s    |  d    | f   | g | h | j | k |  l    | ; | ' |   |             |
 | ф    | ы    |  в    | а   | п | р | о | л |  д    | ж | э |   |             |
@@ -222,7 +222,7 @@ The Russian language layout based on the base-fragment-ru_RU.xml layout file. Fu
 | Я    | Ч    |  С    | М   | И | Т | Ь | Б |  Ю    |   |   |   |             |
 |      |      |       |     |   |   |   |   |       |   |   |   |             |
 
-To show russian language keys press e key.
+To show russian language keys press ё key.
 
 ![img#6 Russian language](img/keyboard_06_russian.png)
 
@@ -241,12 +241,14 @@ NumPad:
 ∞en↓pd←5→ho↑pu≤≥_±≠√  Shift(Caps lock) mode en-end, pd-page down, ho-home, pu-page up
 
 To show greek language keys press cp key (see image above #5).
+
 To show function keys press fn key (see image #7).
 
 ![img#7 Function keys - fn mode](img/keyboard_04_function_keys.png)
-To show function keys press fn key (see image #7).
 
-![img#7 Function keys - fn mode](img/keyboard_04_function_keys.png)
+To show other symbols press Shift key (see image #8).
+
+![img#8 Shift key pressed](img/keyboard_02_shift_key.png)
 
 ## Change locale
 Info: https://forums.raspberrypi.com/viewtopic.php?t=49468
