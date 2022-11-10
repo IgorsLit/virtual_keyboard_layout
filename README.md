@@ -1,6 +1,6 @@
-ity# Virtual Keyboard Layout
+# Virtual Keyboard Layout
 
-This repository contents is the virtual keyboard layout file and the buttons' images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keys keyboard (Main, Function Keys and NumPad) layout with 4 languages symbols (see image #1).
+This repository content is the virtual keyboard layout file and the buttons' images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keys keyboard (Main, Function Keys and NumPad) layout with 4 languages symbols (see image #1).
 
 ![img#1 85 keys keyboard](img/keyboard_85keys_small.png)
 
@@ -52,7 +52,7 @@ y-> "
 sudo nano /usr/bin/toggle-keyboard.sh
 ```
 
-Type text in text editor nano:
+   Type text in text editor nano:
 
 ```
 #!/bin/bash
@@ -138,7 +138,7 @@ After reboot you will see the Toggle Virtual Keyboard icon near the Clock (see i
 
 ## Virtual Keyboard Layouts
 
-The default keyboard layout is only letter keys QWERTY, Backspace, Enter and Shift. To change layout you need other file in XML format. You can find some example layouts at /usr/share/matchbox-keyboard/ Copy configuration into user home folder .matchbox (~/.matchbox)
+The default keyboard layout is only letter keys QWERTY, Backspace, Enter and Shift key. To change layout you need other configuration file in XML format. You can find some example layouts at /usr/share/matchbox-keyboard/ Copy configuration file into user home folder .matchbox (~/.matchbox)
 
 ### Change Layout
 
@@ -175,60 +175,60 @@ This layout is based on the topic described keyboard layouts https://forums.rasp
 
 ### Latvian language symbols (mod2):
 
-The Latvian language's layout based on the base-fragment-lv_LV.xml layout file
-full path is /usr/share/matchbox-keyboard/base-fragment-lv_LV.xml
+The Latvian language layout based on the base-fragment-lv_LV.xml layout file.
+Full path is /usr/share/matchbox-keyboard/base-fragment-lv_LV.xml
 
 |   |   |   |   |   |   |   |   |   |   | Description |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| q | w | e | r | t | y | u | i | o | p |   |
-| Ū | ū | Ē | ē | Č | č | Ž | ž | Ķ | ķ |   |
-|   |   |   |   |   |   |   |   |   |   |   |
-| a | s | d | f | g | h | j | k | l |   |   |
-| Š | š | Ģ | ģ | Ņ | ņ | Ī | ī | ¸ |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |
-| z | x | c | v | b | n | m |   |   |   |   |
-| Ā | ā | Ļ | ļ | ˆ | ˋ | ˇ |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----------:|
+| q | w | e | r | t | y | u | i | o | p |  main keys  |
+| Ū | ū | Ē | ē | Č | č | Ž | ž | Ķ | ķ |             |
+|   |   |   |   |   |   |   |   |   |   |             |
+| a | s | d | f | g | h | j | k | l |   |             |
+| Š | š | Ģ | ģ | Ņ | ņ | Ī | ī | ¸ |   |             |
+|   |   |   |   |   |   |   |   |   |   |             |
+| z | x | c | v | b | n | m |   |   |   |             |
+| Ā | ā | Ļ | ļ | ˆ | ˋ | ˇ |   |   |   |             |
+|   |   |   |   |   |   |   |   |   |   |             |
 
-![img#5 Latvian language](img/keyboard_05_latvian_greek.png)
+To show latvian language keys press cp key.
+
+![img#5 Latvian/Greek languages](img/keyboard_05_latvian_greek.png)
 
 ### Russian language symbols (mod3):
 
-The Russian language's layout based on the base-fragment-ru_RU.xml layout file
-full path is /usr/share/matchbox-keyboard/base-fragment-ru_RU.xml
+The Russian language layout based on the base-fragment-ru_RU.xml layout file. Full path is /usr/share/matchbox-keyboard/base-fragment-ru_RU.xml
 
-|   |   |   |   |   |   |   |   |   |   |   |   | Description |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| q | w | e | r | t | y | u | i | o | p | { | } |   |
-| й | ц | у | к | е | н | г | ш | щ | з | х |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |
-| a | s | d | f | g | h | j | k | l | ; | ' |   |   |
-| ф | ы | в | а | п | р | о | л | д | ж | э |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |
-| z | x | c | v | b | n | m | , | . |   |   |   |   |
-| я | ч | с | м | и | т | ь | б | ю |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|      |      |       |     |   |   |   |   |       |   |   |   | Description |
+|:----:|:----:|:-----:|:---:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-:|:-----------:|
+| q    | w    |  e    | r   | t | y | u | i |  o    | p | { | } |             |
+| й    | ц    |  у    | к   | е | н | г | ш |  щ    | з | х |   |             |
+|      |      |       |     |   |   |   |   |       |   |   |   |             |
+| a    | s    |  d    | f   | g | h | j | k |  l    | ; | ' |   |             |
+| ф    | ы    |  в    | а   | п | р | о | л |  д    | ж | э |   |             |
+|      |      |       |     |   |   |   |   |       |   |   |   |             |
+| z    | x    |  c    | v   | b | n | m | , |  .    |   |   |   |             |
+| я    | ч    |  с    | м   | и | т | ь | б |  ю    |   |   |   |             |
+|      |      |       |     |   |   |   |   |       |   |   |   |             |
+| 1    | 2    |  3    | 4   | 5 | 6 | 7 | 8 |  9    | 0 | - |   |  main keys  |
+| Й    | Ц    |  У    | К   | Е | Н | Г | Ш |  Щ    | З | Х |   |             |
+|      |      |       |     |   |   |   |   |       |   |   |   |             |
+| Bksp | Home | PgUp  | 7   | 8 | 9 | ÷ |   |       |   |   |   | Keys/NumPad |
+| Ф    | Ы    |  В    | А   | П | Р | О |   |       |   |   |   |             |
+|      |      |       |     |   |   |   |   |       |   |   |   |             |
+| \    | End  | PgDn  | 4   |   |   |   |   |       |   |   |   |             |
+| Л    | Д    |  Ж    | Э   |   |   |   |   |       |   |   |   |             |
+|      |      |       |     |   |   |   |   |       |   |   |   |             |
+| 6    | ×    | Enter | Del | 1 | 2 | 3 | - | Shift |   |   |   | NumPad/Keys |
+| Я    | Ч    |  С    | М   | И | Т | Ь | Б |  Ю    |   |   |   |             |
+|      |      |       |     |   |   |   |   |       |   |   |   |             |
 
-1234567890-
+To show russian language keys press e key.
 
-ЙЦУКЕНГШЩЗХ
+![img#6 Russian language](img/keyboard_06_russian.png)
 
-BkspHomePgUp789÷
+### Greek language's alphabet fragment and other symbols
 
-Ф   Ы   В   АПРО
-
-\EndPgDn4
-
-ЛД  Ж   Э
-
-6×EnterDel123-Shift
-
-ЯЧС    М  ИТЬБЮ
-
-![img#5 Russian language](img/keyboard_06_russian.png)
-
-### Greek language's alphabet fragment
-Greek language symbols fragment is in NumPad keyboard (mod2)
+Greek language symbols is in NumPad keyboard (mod2) and other mode keys
 
 NumPad:
 
@@ -239,6 +239,14 @@ NumPad:
 ₀α βγ δΔθλ μω Ωπ₋₊→∫  lang1 mode (mod2)
 
 ∞en↓pd←5→ho↑pu≤≥_±≠√  Shift(Caps lock) mode en-end, pd-page down, ho-home, pu-page up
+
+To show greek language keys press cp key (see image above #5).
+To show function keys press fn key (see image #7).
+
+![img#7 Function keys - fn mode](img/keyboard_04_function_keys.png)
+To show function keys press fn key (see image #7).
+
+![img#7 Function keys - fn mode](img/keyboard_04_function_keys.png)
 
 ## Change locale
 Info: https://forums.raspberrypi.com/viewtopic.php?t=49468
