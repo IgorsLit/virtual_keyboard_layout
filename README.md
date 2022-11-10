@@ -2,6 +2,7 @@
 
 This repository content is the virtual keyboard layout file and the buttons' images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keys keyboard (Main, Function Keys and NumPad) layout with 4 languages symbols (see image #1).
 
+image #1
 ![img#1 85 keys keyboard](img/keyboard_85keys_small.png)
 
 
@@ -42,6 +43,7 @@ y-> "
 2. Hover over “Accessories”, this will bring up an additional menu.
 3. Within this new menu, click “Keyboard” to launch the program (see image #2)
 
+image #2
 ![img#2 Launch Virtual Keyboard](img/keyboard_launch.png)
 
 ### Keyboard launcher
@@ -134,6 +136,7 @@ sudo reboot
 
 After reboot you will see the Toggle Virtual Keyboard icon near the Clock (see image #3).
 
+image #3
 ![img#3 Toggle Virtual Keyboard icon](img/keyboard_panel_icon.png)
 
 ## Virtual Keyboard Layouts
@@ -171,6 +174,9 @@ This layout is based on the topic described keyboard layouts https://forums.rasp
 
 ### Main keys
 
+The keyboard's main keys are the english alphabet.
+
+image #4
 ![img#4 Keyboard's main keys](img/keyboard_01_main_keys.png)
 
 ### Latvian language symbols (mod2):
@@ -190,8 +196,9 @@ Full path is /usr/share/matchbox-keyboard/base-fragment-lv_LV.xml
 | Ā | ā | Ļ | ļ | ˆ | ˋ | ˇ |   |   |   |             |
 |   |   |   |   |   |   |   |   |   |   |             |
 
-To show latvian language keys press cp key.
+If you want to use latvian language alphabet press čπ key to show it.
 
+image #5
 ![img#5 Latvian/Greek languages](img/keyboard_05_latvian_greek.png)
 
 ### Russian language symbols (mod3):
@@ -209,8 +216,8 @@ The Russian language layout based on the base-fragment-ru_RU.xml layout file. Fu
 | z    | x    |  c    | v   | b | n | m | , |  .    |   |   |   |             |
 | я    | ч    |  с    | м   | и | т | ь | б |  ю    |   |   |   |             |
 |      |      |       |     |   |   |   |   |       |   |   |   |             |
-| 1    | 2    |  3    | 4   | 5 | 6 | 7 | 8 |  9    | 0 | - |   |  main keys  |
-| Й    | Ц    |  У    | К   | Е | Н | Г | Ш |  Щ    | З | Х |   |             |
+| 1    | 2    |  3    | 4   | 5 | 6 | 7 | 8 |  9    | 0 | - | = |  main keys  |
+| Й    | Ц    |  У    | К   | Е | Н | Г | Ш |  Щ    | З | Х | ` |             |
 |      |      |       |     |   |   |   |   |       |   |   |   |             |
 | Bksp | Home | PgUp  | 7   | 8 | 9 | ÷ |   |       |   |   |   | Keys/NumPad |
 | Ф    | Ы    |  В    | А   | П | Р | О |   |       |   |   |   |             |
@@ -222,32 +229,38 @@ The Russian language layout based on the base-fragment-ru_RU.xml layout file. Fu
 | Я    | Ч    |  С    | М   | И | Т | Ь | Б |  Ю    |   |   |   |             |
 |      |      |       |     |   |   |   |   |       |   |   |   |             |
 
-To show russian language keys press ё key.
+If you want to use russian language alphabet press ё key to show it.
 
+image #6
 ![img#6 Russian language](img/keyboard_06_russian.png)
 
 ### Greek language's alphabet fragment and other symbols
 
-Greek language symbols is in NumPad keyboard (mod2) and other mode keys
+Greek language symbols is in NumPad keyboard (mod2) also there are other symbols.
 
-NumPad:
+|   |    |   |    |   |   |   |    |   |    |   |   |   |   |   |   |     Description     |
+|:-:|:--:|:-:|:--:|:-:|:-:|:-:|:--:|:-:|:--:|:-:|:-:|:-:|:-:|:-:|:-:|:-------------------:|
+|0  |1   |2  |3   |4  |5  |6  |7   |8  |9   |÷  |×  |-  |+  |=  |.  |     NumPad mode     |
+|   |    |   |    |   |   |   |    |   |    |   |   |   |   |   |   |                     |
+|⁰  |1   |2  |3   |4  |5  |6  |7   |8  |9   |ρ  |×  |¯  |⁺  |~  |.  |   fn mode (mod1)    |
+|   |    |   |    |   |   |   |    |   |    |   |   |   |   |   |   |                     |
+|₀  |α   |β  |γ   |δ  |Δ  |θ  |λ   |μ  |ω   |Ω  |π  |₋  |₊  |→  |∫  |  lang2 mode (mod2)  |
+|   |    |   |    |   |   |   |    |   |    |   |   |   |   |   |   |                     |
+|∞  |en  |↓  |pd  |←  |5  |→  |ho  |↑  |pu  |≤  |≥  |_  |±  |≠  |√  |Shift(Caps lock) mode|
+|   |    |   |    |   |   |   |    |   |    |   |   |   |   |   |   |en-end, pd-page down,|
+|   |    |   |    |   |   |   |    |   |    |   |   |   |   |   |   |ho-home, pu-page up  |
+|   |    |   |    |   |   |   |    |   |    |   |   |   |   |   |   |                     |
 
-01 23 4567 89 ÷×+=.   num pad mode
+Press čπ key to show most used greek language symbols (see image #5 above).
 
-⁰1 23 4567 89 ρ×¯⁺~.  fn mode (mod1)
+Press fn key to use function keys  (see image #7).
 
-₀α βγ δΔθλ μω Ωπ₋₊→∫  lang1 mode (mod2)
-
-∞en↓pd←5→ho↑pu≤≥_±≠√  Shift(Caps lock) mode en-end, pd-page down, ho-home, pu-page up
-
-To show greek language keys press cp key (see image above #5).
-
-To show function keys press fn key (see image #7).
-
+image #7
 ![img#7 Function keys - fn mode](img/keyboard_04_function_keys.png)
 
-To show other symbols press Shift key (see image #8).
+If you want to use other symbols press Shift key (see image #8).
 
+image #8
 ![img#8 Shift key pressed](img/keyboard_02_shift_key.png)
 
 ## Change locale
