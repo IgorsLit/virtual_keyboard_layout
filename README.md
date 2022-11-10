@@ -273,12 +273,12 @@ https://wiki.debian.org/Locale
 3. select Locale
 4. in Package configuration check your country language and english packages
 5. select your country as default
-6. change /etc/locale/default to:
+6. change /etc/default/locale to:
 LANG=lv_LV.UTF-8
 LANGUAGE=en_US.UTF-8
 LC_ALL=lv_LV.UTF-8
 or if you want to choose other settings run command:
 locale
-and copy other options to /etc/locale/default
+and copy other options to /etc/default/locale
 7. sudo locale-gen
 8. sudo reboot 
