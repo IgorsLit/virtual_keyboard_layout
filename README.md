@@ -1,6 +1,6 @@
 # Virtual Keyboard Layout
 
-This repository content is the virtual keyboard layout file and the buttons' images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keys keyboard (Main, Function Keys and NumPad) layout with 4 languages symbols (see image #1).
+This repository content is the virtual keyboard layout file and the buttons images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keys keyboard (Main, Function Keys and NumPad) layout with 4 languages symbols (see image #1).
 
 image #1
 ![img#1 85 keys keyboard](img/keyboard_85keys_small.png)
@@ -10,11 +10,11 @@ image #1
 
 The **matchbox-keyboard** is the virtual (on screen) keyboard program for the Raspberry Pi.
 
-The original program's repository is https://github.com/mwilliams03/matchbox-keyboard
+The original program repository is https://github.com/mwilliams03/matchbox-keyboard
 
 ## Virtual Keyboard setting up
 
-Info: https://pimylifeup.com/raspberry-pi-on-screen-keyboard/
+Info: *Setting up an On-Screen Keyboard on the Raspberry Pi* https://pimylifeup.com/raspberry-pi-on-screen-keyboard/
 
 
 ### Install
@@ -141,11 +141,11 @@ image #3
 
 ## Virtual Keyboard Layouts
 
-The default keyboard layout is only letter keys QWERTY, Backspace, Enter and Shift key. To change layout you need other configuration file in XML format. You can find some example layouts at /usr/share/matchbox-keyboard/ Copy configuration file into user home folder .matchbox (~/.matchbox)
+The default keyboard layout is only letters keys QWERTY, Backspace, Enter and Shift keys. To change layout you need other configuration file in XML format. You can find some example layouts at /usr/share/matchbox-keyboard/ Copy configuration file into user home folder .matchbox (~/.matchbox)
 
 ### Change Layout
 
-Info: https://stackoverflow.com/questions/70574505/how-to-change-the-default-matchbox-keyboard-layout
+Info: *How to change the default matchbox-keyboard layout* https://stackoverflow.com/questions/70574505/how-to-change-the-default-matchbox-keyboard-layout
 
 1. Download the repository files into Downloads folder (~/Downloads/virtual_keyboard_layout)
 
@@ -156,7 +156,7 @@ mkdir ~/.matchbox
 cp ~/Downloads/virtual_keyboard_layout/keyboard_qwerty_85keys.xml ~/.matchbox/keyboard.xml
 ```
 
-3. Copy arrows' images in /usr/share/machbox-keyboard . Input command in the Terminal:
+3. Copy arrows images into /usr/share/machbox-keyboard . Input command in the Terminal:
 
 ```
 sudo cp ~/Downloads/virtual_keyboard_layout/img/arrow_*.png /usr/share/machbox-keyboard/
@@ -174,7 +174,7 @@ This layout is based on the topic described keyboard layouts https://forums.rasp
 
 ### Main keys
 
-The keyboard's main keys are the english alphabet.
+The keyboard main keys are the English alphabet.
 
 image #4
 ![img#4 Keyboard's main keys](img/keyboard_01_main_keys.png)
@@ -217,7 +217,7 @@ The Russian language layout based on the base-fragment-ru_RU.xml layout file. Fu
 | я    | ч    |  с    | м   | и | т | ь | б |  ю    |   |   |   |             |
 |      |      |       |     |   |   |   |   |       |   |   |   |             |
 | 1    | 2    |  3    | 4   | 5 | 6 | 7 | 8 |  9    | 0 | - | = |  main keys  |
-| Й    | Ц    |  У    | К   | Е | Н | Г | Ш |  Щ    | З | Х | ` |             |
+| Й    | Ц    |  У    | К   | Е | Н | Г | Ш |  Щ    | З | Х | Ъ |             |
 |      |      |       |     |   |   |   |   |       |   |   |   |             |
 | Bksp | Home | PgUp  | 7   | 8 | 9 | ÷ |   |       |   |   |   | Keys/NumPad |
 | Ф    | Ы    |  В    | А   | П | Р | О |   |       |   |   |   |             |
@@ -264,21 +264,5 @@ image #8
 ![img#8 Shift key pressed](img/keyboard_02_shift_key.png)
 
 ## Change locale
-Info: https://forums.raspberrypi.com/viewtopic.php?t=49468
 
-https://wiki.debian.org/Locale
-
-1. sudo raspi-config
-2. select Localisation options
-3. select Locale
-4. in Package configuration check your country language and english packages
-5. select your country as default
-6. change /etc/default/locale to:
-LANG=lv_LV.UTF-8
-LANGUAGE=en_US.UTF-8
-LC_ALL=lv_LV.UTF-8
-or if you want to choose other settings run command:
-locale
-and copy other options to /etc/default/locale
-7. sudo locale-gen
-8. sudo reboot 
+If you doesn't see the languages symbols you need to change Raspbarry Pi locale setting (regional setting). Read the change_locale.md file.
