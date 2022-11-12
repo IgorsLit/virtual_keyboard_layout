@@ -265,4 +265,4 @@ image #8
 
 ## Change locale
 
-If you doesn't see the languages symbols you need to change Raspbarry Pi locale setting (regional setting). Read the change_locale.md file.
+If you don't see the languages symbols you need to change Raspbarry Pi locale setting (regional setting). Read the change_locale.md file.
