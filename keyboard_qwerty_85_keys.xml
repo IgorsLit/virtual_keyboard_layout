@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard>
+
+<options>
+<!-- not yet implemented -->
+</options>
+
+<layout id="full size keyboard 85 keys">
+
+  <row>
+
+    <space width="250" extended="true"/>
+
+    <key fill="true">
+      <default display="Esc" action="escape" />
+    </key>
+
+    <key>
+      <default display="`" />
+      <shifted display="~" />
+      <mod2    display="~" />
+      <mod3    display="ë" />
+    </key>
+
+    <key>
+      <default display="1" />
+      <shifted display="!" />
+      <mod1    display="f1" action="f1" />
+      <mod3    display="Й" />
+    </key>
+
+    <key>
+      <default display="2" />
+      <shifted display="@" />
+      <mod1    display="f2" action="f2" />
+      <mod3    display="Ц" />
+    </key>
+
+    <key>
+      <default display="3" />
+      <shifted display="#" />
+      <mod1    display="f3" action="f3" />
+      <mod3    display="У" />
+    </key>
+
+    <key>
+      <default display="4" />
+      <shifted display="$" />
+      <mod1    display="f4" action="f4" />
+      <mod3    display="К" />
+    </key>
+
+    <key>
+      <default display="5" />
+      <shifted display="%" />
+      <mod1    display="f5" action="f5" />
+      <mod3    display="Е" />
+    </key>
+
+    <key>
+      <default display="6" />
+      <shifted display="^" />
+      <mod1    display="f6" action="f6" />
+      <mod3    display="Н" />
+    </key>
+
+    <key>
+      <default display="7" />
+      <shifted display="&amp;" />
+      <mod1    display="f7" action="f7" />
+      <mod3    display="Г" />
+    </key>
+
+    <key>
+      <default display="8" />
+      <shifted display="*" />
+      <mod1    display="f8" action="f8" />
+      <mod3    display="Ш" />
+    </key>
+
+    <key>
+      <default display="9" />
+      <shifted display="(" />
+      <mod1    display="f9" action="f9" />
+      <mod3    display="Щ" />
+    </key>
+
+    <key>
+      <default display="0" />
+      <shifted display=")" />
+      <mod1    display="f10" action="f10" />
+      <mod3    display="З" />
+    </key>
+
+    <key>
+      <default display="-" />
+      <shifted display="_" />
+      <mod1    display="f11" action="f11" />
+      <mod3    display="Х" />
+    </key>
+
+    <key>
+      <default display="=" />
+      <shifted display="+" />
+      <mod1    display="f12" action="f12" />
+      <mod3    display="Ъ" />
+    </key>
+
+    <key fill="true">
+      <!-- <default display="⌫" action="backspace"/> -->
+      <default display="Bksp" action="backspace"/>
+      <mod3    display="Ф" />
+    </key>
+
+    <space width="500" extended="true"/>
+
+    <key width="2000" extended="true">
+      <default display="Home" action="home"/>
+      <mod3    display="Ы" />
+    </key>
+
+    <key width="2000" extended="true">
+      <default display="PgUp" action="pageup"/>
+      <mod3    display="В" />
+    </key>
+
+    <space width="250" extended="true"/>
+
+    <key obey-caps='true' fill='false'>
+      <default display="7" />
+      <shifted display="ho" action="home" />
+      <mod2    display="λ" action="xkeysym:Greek_lambda"/>
+      <mod3    display="А" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="8" />
+      <!-- <shifted display="up" action="up" /> -->
+      <shifted display="image:/usr/share/matchbox-keyboard/arrow_up_20x20.png" action="up" />
+      <mod2    display="μ" action="xkeysym:Greek_mu"/>
+      <mod3    display="П" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="9" />
+      <shifted display="pu" action="pageup" />
+      <mod2    display="ω" action="xkeysym:Greek_omega"/>
+      <mod3    display="Р" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="÷" />
+      <shifted display="≤" />
+      <mod1    display="ρ" action="xkeysym:Greek_rho"/>
+      <mod2    display="Ω" action="xkeysym:Greek_OMEGA"/>
+      <mod3    display="О" />
+    </key>
+
+    <space width="250" extended="true"/>
+
+  </row>
+
+  <row>
+
+    <space width="250" extended="true"/>
+
+    <key fill="true">
+      <!-- <default display="↹" action="tab"/> -->
+      <default display="Tab" action="tab"/>
+    </key>
+
+    <key obey-caps='true'>
+      <default display="q" />
+      <shifted display="Q" />
+      <mod2    display="Ū"/>
+      <mod3    display="й" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="w" />
+      <shifted display="W" />
+      <mod2    display="ū" />
+      <mod3    display="ц" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="e" />
+      <shifted display="E" />
+      <mod2    display="Ē" />
+      <mod3    display="у" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="r" />
+      <shifted display="R" />
+      <mod2    display="ē" />
+      <mod3    display="к" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="t" />
+      <shifted display="T" />
+      <mod2    display="Č" />
+      <mod3    display="е" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="y" />
+      <shifted display="Y" />
+      <mod2    display="č" />
+      <mod3    display="н" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="u" />
+      <shifted display="U" />
+      <mod2    display="Ž" />
+      <mod3    display="г" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="i" />
+      <shifted display="I" />
+      <mod2    display="ž" />
+      <mod3    display="ш" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="o" />
+      <shifted display="O" />
+      <mod2    display="Ķ" />
+      <mod3    display="щ" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="p" />
+      <shifted display="P" />
+      <mod2    display="ķ" />
+      <mod3    display="з" />
+    </key>
+
+    <key>
+      <default display="{" />
+      <shifted display="[" />
+      <mod3    display="х" />
+    </key>
+
+    <key>
+      <default display="}" />
+      <shifted display="]" />
+      <mod3    display="ъ" />
+    </key>
+
+    <key fill="true">
+      <default display="\" />
+      <shifted display="|" />
+      <mod3    display="Л" />
+    </key>
+
+    <space width="500" extended="true"/>
+
+    <key width="2000" extended="true">
+      <default display="End" action="end"/>
+      <mod3    display="Д" />
+    </key>
+
+    <key width="2000" extended="true">
+      <default display="PgDn" action="pagedown"/>
+      <mod3    display="Ж" />
+    </key>
+
+    <space width="250" extended="true"/>
+
+    <key obey-caps='true' fill='false'>
+      <default display="4" />
+      <!-- <shifted display="le" action="left" /> -->
+      <shifted display="image:/usr/share/matchbox-keyboard/arrow_left_20x20.png" action="left" />
+      <mod2    display="δ" action="xkeysym:Greek_delta"/>
+      <mod3    display="Э" />
+    </key>
+
+    <key fill='false'>
+      <default display="5" />
+      <mod2    display="Δ" action="xkeysym:Greek_DELTA"/>
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="6" />
+      <!-- <shifted display="ri" action="right" /> -->
+      <shifted display="image:/usr/share/matchbox-keyboard/arrow_right_20x20.png" action="right" />
+      <mod2    display="θ" action="xkeysym:Greek_theta"/>
+      <mod3    display="Я" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="×" />
+      <shifted display="≥" />
+      <mod2    display="π" action="xkeysym:Greek_pi"/>
+      <mod3    display="Ч" />
+    </key>
+
+    <space width="250" extended="true"/>
+
+  </row>
+
+  <row>
+
+    <space width="250" extended="true"/>
+
+    <key fill="true">
+      <default display="Caps/Num" action="modifier:caps"/>
+    </key>
+
+    <key obey-caps='true'>
+      <default display="a" />
+      <shifted display="A" />
+      <mod2    display="Š" />
+      <mod3    display="ф" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="s" />
+      <shifted display="S" />
+      <mod2    display="š" />
+      <mod3    display="ы" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="d" />
+      <shifted display="D" />
+      <mod2    display="Ģ" />
+      <mod3    display="в" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="f" />
+      <shifted display="F" />
+      <mod2    display="ģ" />
+      <mod3    display="а" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="g" />
+      <shifted display="G" />
+      <mod2    display="Ņ" />
+      <mod3    display="п" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="h" />
+      <shifted display="H" />
+      <mod2    display="ņ" />
+      <mod3    display="р" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="j" />
+      <shifted display="J" />
+      <mod2    display="Ī" />
+      <mod3    display="о" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="k" />
+      <shifted display="K" />
+      <mod2    display="ī" />
+      <mod3    display="л" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="l" />
+      <shifted display="L" />
+      <mod2    display="¸" action="xkeysym:dead_cedilla"/>
+      <mod3    display="д" />
+    </key>
+
+    <key>
+      <default display=";" />
+      <shifted display=":" />
+      <mod3    display="ж" />
+    </key>
+
+    <key>
+      <default display="'" />
+      <shifted display='"' />
+      <mod3    display="э" />
+    </key>
+
+    <key fill="true">
+      <!-- <default display="Enter◀┛" action="return"/> -->
+      <default display="Enter" action="return"/>
+      <mod3    display="С" />
+    </key>
+
+    <space width="500" extended="true"/>
+
+    <space width="2000" extended="true" />
+
+    <key width="2000" extended="true">
+      <default display="Del" action="delete"/>
+      <mod3    display="М" />
+    </key>
+
+    <space width="250" extended="true"/>
+
+    <key obey-caps='true' fill='false'>
+      <default display="1" />
+      <shifted display="en" action="end" />
+      <mod2    display="α" action="xkeysym:Greek_alpha"/>
+      <mod3    display="И" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="2" />
+      <!-- <shifted display="dn" action="down"/> -->
+      <shifted display="image:/usr/share/matchbox-keyboard/arrow_down_20x20.png" action="down" />
+      <mod2    display="β" action="xkeysym:Greek_beta"/>
+      <mod3    display="Т" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="3" />
+      <shifted display="pd" action="pagedown"/>
+      <mod2    display="γ" action="xkeysym:Greek_gamma"/>
+      <mod3    display="Ь" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="-" />
+      <shifted display="_" />
+      <mod1    display="image:/usr/share/matchbox-keyboard/super_minus.png" action="¯" />
+      <mod2    display="image:/usr/share/matchbox-keyboard/sub_minus.png" action="₋" />
+      <mod3    display="Б" />
+    </key>
+    <space width="250" extended="true"/>
+
+  </row>
+
+  <row>
+
+    <space width="250" extended="true"/>
+
+    <key fill="true">
+      <default display="Shift" action="modifier:shift"/>
+    </key>
+
+    <key obey-caps='true'>
+      <default display="z" />
+      <shifted display="Z" />
+      <mod2    display="Ā" />
+      <mod3    display="я" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="x" />
+      <shifted display="X" />
+      <mod2    display="ā" />
+      <mod3    display="ч" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="c" />
+      <shifted display="C" />
+      <mod2    display="Ļ" />
+      <mod3    display="с" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="v" />
+      <shifted display="V" />
+      <mod2    display="ļ" />
+      <mod3    display="м" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="b" />
+      <shifted display="B" />
+      <mod2    display="ˆ" action="xkeysym:dead_circumflex"/>
+      <mod3    display="и" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="n" />
+      <shifted display="N" />
+      <mod2    display="`" action="xkeysym:dead_grave"/>
+      <mod3    display="т" />
+    </key>
+
+    <key obey-caps='true'>
+      <default display="m" />
+      <shifted display="M" />
+      <mod2    display="ˇ" action="xkeysym:dead_caron"/>
+      <mod3    display="ь" />
+    </key>
+
+    <key>
+      <default display="," />
+      <shifted display="&lt;" />
+      <mod3    display="б" />
+    </key>
+
+    <key>
+      <default display="." />
+      <shifted display="&gt;" />
+      <mod3    display="ю" />
+    </key>
+
+    <key>
+      <default display="/" />
+      <shifted display="?" />
+    </key>
+
+    <key fill="true">
+      <default display="Shift" action="modifier:shift"/>
+      <mod3    display="Ю" />
+    </key>
+
+    <space width="500" extended="true"/>
+
+    <space width="2000" extended="true" />
+
+    <space width="2000" extended="true" />
+
+    <space width="250" extended="true"/>
+
+    <key obey-caps='true' fill='false'>
+      <default display="0" />
+      <shifted display="∞"/>
+      <mod1    display="image:/usr/share/matchbox-keyboard/super_0.png" action="xkeysym:zerosuperior" />
+      <mod2    display="image:/usr/share/matchbox-keyboard/sub_0.png" action="xkeysym:zerosubscript" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="." />
+      <shifted display="√" />
+      <mod2    display="∫" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="=" />
+      <shifted display="≠" />
+      <mod1    display="~" />
+      <mod2    display="→" />
+    </key>
+
+    <key obey-caps='true' fill='false'>
+      <default display="+" />
+      <shifted display="±" />
+      <mod1    display="image:/usr/share/matchbox-keyboard/super_plus.png" action="⁺" />
+      <mod2    display="image:/usr/share/matchbox-keyboard/sub_plus.png" action="₊" />
+    </key>
+
+    <space width="250" extended="true"/>
+
+  </row>
+
+  <row>
+
+    <space width="250" extended="true"/>
+
+    <key width="1250">
+      <default display="čπ" action="modifier:mod2"/>
+    </key>
+
+    <key width="2500">
+      <default display="Ctrl" action="modifier:ctrl"/>
+    </key>
+
+    <key width="2500">
+      <default display="Alt" action="modifier:alt"/>
+    </key>
+
+    <key width="9000">
+      <default display=" " action="space"/>
+    </key>
+
+    <key>
+      <default display="fn" action="modifier:mod1"/>
+      <shifted display="'" />
+    </key>
+
+    <key width="1250">
+      <default display="ë" action="modifier:mod3"/>
+    </key>
+
+    <key>
+      <!-- <default display="↑" action="up" /> -->
+      <default display="image:/usr/share/matchbox-keyboard/arrow_up_20x20.png" action="up" />
+    </key>
+
+    <key>
+      <!-- <default display="↓" action="down" /> -->
+      <default display="image:/usr/share/matchbox-keyboard/arrow_down_20x20.png" action="down" />
+    </key>
+
+    <key>
+      <!-- <default display="←" action="left" /> -->
+      <default display="image:/usr/share/matchbox-keyboard/arrow_left_20x20.png" action="left" />
+    </key>
+
+    <key>
+      <!-- <default display="→" action="right" /> -->
+      <default display="image:/usr/share/matchbox-keyboard/arrow_right_20x20.png" action="right" />
+    </key>
+
+    <space width="500" extended="true"/>
+
+    <space width="4000" extended="true" />
+
+    <space width="4000" extended="true" />
+
+    <space width="500" extended="true"/>
+
+    <space width="250" extended="true"/>
+  </row> 
+</layout>
+</keyboard>
