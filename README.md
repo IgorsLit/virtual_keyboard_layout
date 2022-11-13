@@ -1,14 +1,14 @@
 # Virtual Keyboard Layout
 
-This repository content is the virtual keyboard layout file and the buttons images. The layout is program matchbox-keyboard configuration file. The data is in XML format. It is the 85 keys keyboard (Main, Function Keys and NumPad) layout with 4 languages symbols (see image #1).
+The repository containts a virtual keyboard layout file and buttons images. The layout is the program matchbox-keyboard configuration file. The data is in XML format. It is the 85-key keyboard layout (Main, Function Keys and NumPad) with 4 language symbols (see image #1).
 
 image #1
-![img#1 85 keys keyboard](img/keyboard_85keys_small.png)
+![img#1 The 85-key keyboard](img/keyboard_85keys_small.png)
 
 
 ## Program
 
-The **matchbox-keyboard** is the virtual (on screen) keyboard program for the Raspberry Pi.
+The **matchbox-keyboard** is the virtual (on screen) keyboard program for the Raspberry Pi (Debian Bullseye).
 
 The original program repository is https://github.com/mwilliams03/matchbox-keyboard
 
@@ -141,25 +141,25 @@ image #3
 
 ## Virtual Keyboard Layouts
 
-The default keyboard layout is only letters keys QWERTY, Backspace, Enter and Shift keys. To change layout you need other configuration file in XML format. You can find some example layouts at /usr/share/matchbox-keyboard/ Copy configuration file into user home folder .matchbox (~/.matchbox)
+The default keyboard layout is only letter keys QWERTY, Backspace, Enter and Shift keys. To change layout you need other configuration file in XML format. You can find some example layouts at /usr/share/matchbox-keyboard/ Copy configuration file into user home folder .matchbox (~/.matchbox)
 
 ### Change Layout
 
 Info: *How to change the default matchbox-keyboard layout* https://stackoverflow.com/questions/70574505/how-to-change-the-default-matchbox-keyboard-layout
 
-1. Download the repository files into Downloads folder (~/Downloads/virtual_keyboard_layout)
+1. Clone the repository files into Downloads folder (~/Downloads/virtual_keyboard_layout)
 
 2. Input command in the Terminal:
 
 ```
 mkdir ~/.matchbox
-cp ~/Downloads/virtual_keyboard_layout/keyboard_qwerty_85keys.xml ~/.matchbox/keyboard.xml
+cp ~/Downloads/virtual_keyboard_layout/keyboard_qwerty_85_keys.xml ~/.matchbox/keyboard.xml
 ```
 
 3. Copy arrows images into /usr/share/machbox-keyboard . Input command in the Terminal:
 
 ```
-sudo cp ~/Downloads/virtual_keyboard_layout/img/arrow_*.png /usr/share/machbox-keyboard/
+sudo cp ~/Downloads/virtual_keyboard_layout/img/arrow_*.png /usr/share/matchbox-keyboard/
 ```
 
 4. Launch virtual keyboard.
@@ -167,17 +167,17 @@ sudo cp ~/Downloads/virtual_keyboard_layout/img/arrow_*.png /usr/share/machbox-k
 
 ## Layout description
 
-85 keys keyboard layout with 4 languages symbols
+85-key keyboard layout with 4 language symbols
 Main, Function Keys and NumPad (see image #4)
 
-This layout is based on the topic described keyboard layouts https://forums.raspberrypi.com/viewtopic.php?t=325579
+This layout is based on the topic *"Matchbox Keyboard on Bullseye"* described keyboard layout: https://forums.raspberrypi.com/viewtopic.php?t=325579
 
 ### Main keys
 
 The keyboard main keys are the English alphabet.
 
 image #4
-![img#4 Keyboard's main keys](img/keyboard_01_main_keys.png)
+![img#4 Keyboard main keys](img/keyboard_01_main_keys.png)
 
 ### Latvian language symbols (mod2):
 
@@ -196,10 +196,10 @@ Full path is /usr/share/matchbox-keyboard/base-fragment-lv_LV.xml
 | Ā | ā | Ļ | ļ | ˆ | ˋ | ˇ |   |   |   |             |
 |   |   |   |   |   |   |   |   |   |   |             |
 
-If you want to use latvian language alphabet press čπ key to show it.
+If you want to use Latvian language alphabet press čπ key to show it.
 
 image #5
-![img#5 Latvian/Greek languages](img/keyboard_05_latvian_greek.png)
+![img#5 Latvian and Greek languages](img/keyboard_05_latvian_greek.png)
 
 ### Russian language symbols (mod3):
 
@@ -229,7 +229,7 @@ The Russian language layout based on the base-fragment-ru_RU.xml layout file. Fu
 | Я    | Ч    |  С    | М   | И | Т | Ь | Б |  Ю    |   |   |   |             |
 |      |      |       |     |   |   |   |   |       |   |   |   |             |
 
-If you want to use russian language alphabet press ё key to show it.
+If you want to use Russian language alphabet press ё key to show it.
 
 image #6
 ![img#6 Russian language](img/keyboard_06_russian.png)
